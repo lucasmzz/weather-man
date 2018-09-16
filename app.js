@@ -13,7 +13,6 @@ app.get('/:city',(req,res) => {
     
     weather.find({search: city, degreeType: 'F'}, function(err, result) {
       if(err) console.log(err);
-        console.log(result);
         res.render('pages/weather.ejs',{forecast: result});
     });
 });
