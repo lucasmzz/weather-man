@@ -4,18 +4,25 @@
   <% include ../partials/head %>
 </head>
 <body>
-  <header>
-
-  </header>
- 
   <main>
+    
     <div class="row">
       <div class="container">
         <div class="jumbotron">
             <h1>Welcome to Weather-Man!</h1>
+            
+            <div class="container">
+              <form class="form-inline" action="/weather" method="POST">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" name="city" placeholder="e.g.: London"/>
+                    <input class="btn btn-primary" type="submit" value="Check Weather!"/>
+              </form>
+            </div>
+
         </div>
       </div>
     </div>
+
   </main>
   
   <footer>
