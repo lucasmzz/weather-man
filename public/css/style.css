@@ -1,0 +1,7 @@
+body {
+    background-color: linear-gradient(to right, rgb(240, 191, 77), rgb(154, 83, 172));
+}
+
+.bluetext{
+    color: green;
+}
